@@ -9,17 +9,392 @@
 			<property name="suppressAllComments" value="true" />
 			<property name="suppressDate" value="true" />
 		</commentGenerator>
+		
+		 <!-- 
+		<jdbcConnection driverClass="com.mysql.jdbc.Driver"
+			connectionURL="jdbc:mysql://192.168.1.189:3366/jz_ad_customer?useUnicode=true&amp;characterEncoding=UTF-8"
+			userId="dba" password="mysql" />
+
+		<javaModelGenerator targetPackage="com.jiuzhi.biz.frontwebad.entity" targetProject="src">
+			<property name="trimStrings" value="true" />
+		</javaModelGenerator>
+		<sqlMapGenerator targetPackage="com.jiuzhi.biz.frontwebad.provider.dao" targetProject="src" />
+		<javaClientGenerator targetPackage="com.jiuzhi.biz.frontwebad.provider.dao" targetProject="src" type="XMLMAPPER" />
+		
+		<jdbcConnection driverClass="com.mysql.jdbc.Driver"
+			connectionURL="jdbc:mysql://192.168.1.189:3366/jz_we_media?useUnicode=true&amp;characterEncoding=UTF-8"
+			userId="dba" password="mysql" />
+
+		<javaModelGenerator targetPackage="com.jiuzhi.biz.wemedia.entity" targetProject="src">
+			<property name="trimStrings" value="true" />
+		</javaModelGenerator>
+		<sqlMapGenerator targetPackage="com.jiuzhi.biz.wemedia.provider.dao" targetProject="src" />
+		<javaClientGenerator targetPackage="com.jiuzhi.biz.wemedia.provider.dao" targetProject="src" type="XMLMAPPER" />
+		
+		<table domainObjectName="UserDetail" tableName="t_user_detail">
+
+		</table>
+		
+		<jdbcConnection driverClass="com.mysql.jdbc.Driver"
+			connectionURL="jdbc:mysql://192.168.1.189:3366/jz_star?useUnicode=true&amp;characterEncoding=UTF-8"
+			userId="dba" password="mysql" />
+		
+		<jdbcConnection driverClass="com.mysql.jdbc.Driver"
+			connectionURL="jdbc:mysql://192.168.1.225:8066/jz_star?useUnicode=true&amp;characterEncoding=UTF-8"
+			userId="mycat" password="mycat" />
+			
 		<jdbcConnection driverClass="com.mysql.jdbc.Driver"
 			connectionURL="jdbc:mysql://192.168.1.189:3366/jz_yaya?useUnicode=true&amp;characterEncoding=UTF-8"
 			userId="dba" password="mysql" />
+		<jdbcConnection driverClass="com.mysql.jdbc.Driver"
+			connectionURL="jdbc:mysql://192.168.1.225:8066/jz_star?useUnicode=true&amp;characterEncoding=UTF-8"
+			userId="mycat" password="mycat" />
+		-->	
+		<jdbcConnection driverClass="com.mysql.jdbc.Driver"
+			connectionURL="jdbc:mysql://192.168.1.225:8066/jz_star?useUnicode=true&amp;characterEncoding=UTF-8"
+			userId="mycat" password="mycat" />
+		
 		<javaModelGenerator targetPackage="com.jiuzhi.biz.yaya.entity" targetProject="src">
 			<property name="trimStrings" value="true" />
 		</javaModelGenerator>
 		<sqlMapGenerator targetPackage="com.jiuzhi.biz.yaya.provider.dao" targetProject="src" />
 		<javaClientGenerator targetPackage="com.jiuzhi.biz.yaya.provider.dao" targetProject="src" type="XMLMAPPER" />
 		
+		<table domainObjectName="BbsPlate" tableName="t_bbs_plate">
+			<generatedKey type="post" identity="true" column="id"
+				sqlStatement="MySql" />
+		</table>
+		<table domainObjectName="BbsRing" tableName="t_bbs_ring">
+			
+		</table>
+		<table domainObjectName="BbsHot" tableName="t_bbs_hot">
+			
+		</table>
+		<table domainObjectName="BbsHotSns" tableName="t_bbs_hot_sns">
+			
+		</table>
+		<table domainObjectName="BbsRingHeaderApply" tableName="t_bbs_ring_header_apply">
+			<generatedKey type="post" identity="true" column="id"
+				sqlStatement="MySql" />
+		</table>
+		
+		<table domainObjectName="FanPostsTemporary" tableName="t_fan_posts_temporary">
+			
+		</table>
+		
+		<table domainObjectName="FanPostsReplyTemporary" tableName="t_fan_posts_reply_temporary">
+			
+		</table>
+		
+		<table domainObjectName="FanPostsReply" tableName="t_fan_posts_reply">
+			
+		</table>
+		<table domainObjectName="FanPostsReplyUser" tableName="t_fan_posts_reply_user">
+			
+		</table>
+		
+		<table domainObjectName="FanPostsFan" tableName="t_fan_posts_fan">
+			
+		</table>
+		
+		<table domainObjectName="FanPostsStar" tableName="t_fan_posts_star">
+			
+		</table>
+		
+		<!--
+		<table domainObjectName="FanPostsAdd" tableName="t_fan_posts_add">
+		
+		</table>
+		<table domainObjectName="FanPostsContent" tableName="t_fan_posts_content">
+		
+		</table>
+		
+		<table domainObjectName="FanPostsReplyContent" tableName="t_fan_posts_reply_content">
+		
+		</table>
+
+		<table domainObjectName="StarRingHeaderRewardYestdayBalance" tableName="t_star_ring_header_reward_yestday_balance">
+			<generatedKey  column="user_id,day"
+				sqlStatement="MySql" />
+		</table>
+		
+		<table domainObjectName="StarRingHeaderRewardTodayPay" tableName="t_star_ring_header_reward_today_pay">
+			<generatedKey  column="user_id,today"
+				sqlStatement="MySql" />
+		</table>
 		
 		
+		<table domainObjectName="InteractStarDynamic" tableName="t_interact_star_dynamic">
+			<generatedKey type="post" identity="true" column="id"
+				sqlStatement="MySql" />
+		</table>
+		-->	
+		<!-- 
+		<table domainObjectName="InteractStar" tableName="t_interact_star">
+
+		</table>
+		
+		<table domainObjectName="StarSns" tableName="t_star_sns" >
+			
+		</table>
+		
+		<table domainObjectName="InteractStarFocus" tableName="t_interact_star_focus">
+			<generatedKey type="post" identity="true" column="id"
+				sqlStatement="MySql" />
+		</table>
+		
+		<table domainObjectName="StarRelation" tableName="t_star_relation">
+
+		</table>
+		
+		<table domainObjectName="StarWorks" tableName="t_star_works">
+			<generatedKey type="post" identity="true" column="id"
+				sqlStatement="MySql" />
+		</table>
+		
+		<table domainObjectName="StarMonthSns" tableName="t_star_month_sns">
+			<generatedKey  column="star_id,year,month"
+				sqlStatement="MySql" />
+		</table>
+		
+		<table domainObjectName="StarLastDynamic" tableName="t_star_last_dynamic">
+			<generatedKey type="post" identity="true" column="id"
+				sqlStatement="MySql" />
+		</table>
+		
+		<table domainObjectName="StarLastDynamicTask" tableName="t_star_last_dynamic_task">
+			<generatedKey type="post" identity="true" column="id"
+				sqlStatement="MySql" />
+		</table>
+		
+		<table domainObjectName="Dictionary" tableName="t_dictionary">
+			<generatedKey type="post" identity="true" column="id"
+				sqlStatement="MySql" />
+		</table>
+		
+		<table domainObjectName="Tag" tableName="t_tag">
+			<generatedKey type="post" identity="true" column="id"
+				sqlStatement="MySql" />
+		</table>
+		
+		<table domainObjectName="InteractStarDynamic" tableName="t_interact_star_dynamic">
+			<generatedKey type="post" identity="true" column="id"
+				sqlStatement="MySql" />
+		</table>
+		
+		<table domainObjectName="InteractStarDynamicSns" tableName="t_interact_star_dynamic_sns">
+			<generatedKey type="post" identity="true" column="id"
+				sqlStatement="MySql" />
+		</table>
+		
+		<table domainObjectName="StarTodayDynamicSns" tableName="t_star_today_dynamic_sns">
+			<generatedKey column="star_id,dynamic_sns_date"
+				sqlStatement="MySql" />
+		</table>
+		
+		
+		<table domainObjectName="BBTicketCode" tableName="t_bb_ticket_code">
+			<generatedKey type="post" identity="true" column="code"
+				sqlStatement="MySql" />
+		</table>
+		
+		<table domainObjectName="BBTicketDayDetail" tableName="t_bb_ticket_day_detail">
+			<generatedKey type="post" identity="true" column="user_id,current_date"
+				sqlStatement="MySql" />
+		</table>
+		
+		<table domainObjectName="BBTicketDayHelpCount" tableName="t_bb_ticket_day_help_count">
+			<generatedKey type="post" identity="true" column="user_id,current_date"
+				sqlStatement="MySql" />
+		</table>
+		
+		<table domainObjectName="BBTicketDayTop" tableName="t_bb_ticket_day_top">
+			<generatedKey type="post" identity="true" column="user_id,current_date"
+				sqlStatement="MySql" />
+		</table>
+		
+		<table domainObjectName="BBTicketDetail" tableName="t_bb_ticket_detail">
+			<generatedKey type="post" identity="true" column="user_id,friend_user_id,current_date"
+				sqlStatement="MySql" />
+		</table>
+		
+		<table domainObjectName="BBTicketTotalTop" tableName="t_bb_ticket_total_top">
+			<generatedKey type="post" identity="true" column="code"
+				sqlStatement="MySql" />
+		</table>
+ 
+		<table domainObjectName="InteractStar" tableName="t_interact_star">
+			<generatedKey type="post" identity="true" column="id"
+				sqlStatement="MySql" />
+		</table>
+		
+		<table domainObjectName="InteractStarFocus" tableName="t_interact_star_focus">
+			<generatedKey type="post" identity="true" column="id"
+				sqlStatement="MySql" />
+		</table>
+		
+		<table domainObjectName="InteractModule" tableName="t_interact_module">
+			<generatedKey type="post" identity="true" column="id"
+				sqlStatement="MySql" />
+		</table>
+		
+		<table domainObjectName="InteractStarDynamic" tableName="t_interact_star_dynamic">
+			<generatedKey type="post" identity="true" column="id"
+				sqlStatement="MySql" />
+		</table>
+		
+		<table domainObjectName="InteractStarDynamicSns" tableName="t_interact_star_dynamic_sns">
+			<generatedKey type="post" identity="true" column="id"
+				sqlStatement="MySql" />
+		</table>
+		
+		<table domainObjectName="InteractStarDynamicComment" tableName="t_interact_star_dynamic_comment">
+			<generatedKey type="post" identity="true" column="id"
+				sqlStatement="MySql" />
+		</table>
+		
+		<table domainObjectName="InteractStarShareStat" tableName="t_interact_star_share_stat">
+			<generatedKey type="post" identity="true" column="id"
+				sqlStatement="MySql" />
+		</table>
+		-->
+		
+		<!-- 如果主键非自增就不要加别的东西 -->
+		<!--
+		<table domainObjectName="CustomerAmount" tableName="t_customer_amount">
+
+		</table>
+		
+		<table domainObjectName="AmountDetail" tableName="t_amount_detail">
+			<generatedKey type="post" identity="true" column="id"
+				sqlStatement="MySql" />
+		</table>
+		
+		<table domainObjectName="Msg" tableName="t_msg">
+			<generatedKey type="post" identity="true" column="id"
+				sqlStatement="MySql" />
+		</table>
+		
+		<table domainObjectName="OperatorLogs" tableName="operatorlogs">
+			<generatedKey type="post" identity="true" column="id"
+				sqlStatement="MySql" />
+		</table>
+		
+		<table domainObjectName="AdDeliver" tableName="t_ad_deliver">
+			<generatedKey type="post" identity="true" column="id"
+				sqlStatement="MySql" />
+		</table>
+
+		<table domainObjectName="FeeDay" tableName="t_fee_day">
+
+		</table>
+		
+		<table domainObjectName="FeeDeliverView" tableName="t_fee_deliver_view">
+
+		</table>
+		-->
+		<!--
+		<table domainObjectName="FeeTotal" tableName="t_fee_total">
+
+		</table>
+		
+		
+		<table domainObjectName="FeeDeliver" tableName="t_fee_deliver">
+
+		</table>
+		
+		<table domainObjectName="FeePlan" tableName="t_fee_plan">
+
+		</table>
+		
+		<table domainObjectName="DayFeeInittask" tableName="t_day_fee_inittask">
+		</table>
+		
+		<table domainObjectName="AD" tableName="t_ad">
+			<generatedKey type="post" identity="true" column="id"
+				sqlStatement="MySql" />
+		</table>
+		-->
+		<!-- 
+		<table domainObjectName="AdPlan" tableName="t_ad_plan">
+			<generatedKey type="post" identity="true" column="id"
+				sqlStatement="MySql" />
+		</table>
+		
+		<table domainObjectName="StatProfit" tableName="t_stat_profit">
+			<generatedKey type="post" identity="true" column="id"
+				sqlStatement="MySql" />
+		</table>
+		
+		<table domainObjectName="AdStatMinute" tableName="t_ad_stat_minute">
+			<generatedKey type="post" identity="true" column="id"
+				sqlStatement="MySql" />
+		</table>
+		-->
+		
+		<!--
+		<table domainObjectName="AdLog" tableName="t_ad_logs">
+			<generatedKey type="post" identity="true" column="id"
+				sqlStatement="MySql" />
+		</table>
+		
+		<table domainObjectName="FeeLogs" tableName="t_fee_logs">
+			<generatedKey type="post" identity="true" column="id"
+				sqlStatement="MySql" />
+		</table>
+		-->
+		
+		<!--
+		<table domainObjectName="Video" tableName="t_video">
+			<generatedKey type="post" identity="true" column="id"
+				sqlStatement="MySql" />
+		</table>
+		
+		<table domainObjectName="VideoUploadState" tableName="t_video_upload_state">
+			<generatedKey type="post" identity="true" column="id"
+				sqlStatement="MySql" />
+		</table>
+		
+		<table domainObjectName="AdStatMinute" tableName="t_ad_stat_minute">
+			<generatedKey type="post" identity="true" column="id"
+				sqlStatement="MySql" />
+		</table>
+		
+		
+		
+		 
+		<table domainObjectName="AdPosition" tableName="t_ad_position">
+			<generatedKey type="post" identity="true" column="id"
+				sqlStatement="MySql" />
+		</table>
+		
+		<table domainObjectName="Picture" tableName="t_pictures">
+			<generatedKey type="post" identity="true" column="id"
+				sqlStatement="MySql" />
+		</table>
+		-->
+		
+		<!-- 
+		<table domainObjectName="AdPrice" tableName="t_ad_price">
+			<generatedKey type="post" identity="true" column="id"
+				sqlStatement="MySql" />
+		</table>
+		
+		<table domainObjectName="StatProfit" tableName="t_stat_profit">
+			<generatedKey type="post" identity="true" column="id"
+				sqlStatement="MySql" />
+		</table>
+		
+		<table domainObjectName="AdSetting" tableName="t_ad_setting">
+			<generatedKey type="post" identity="true" column="id"
+				sqlStatement="MySql" />
+		</table>
+		
+		<table domainObjectName="CustomerPictures" tableName="t_customer_pictures">
+			<generatedKey type="post" identity="true" column="id"
+				sqlStatement="MySql" />
+		</table>
+		  
 		<table domainObjectName="VideoEpisodeCommentSns" tableName="t_video_episode_comment_sns">
 			<generatedKey identity="false" column="commentId" sqlStatement="MySql" />
 		</table>
@@ -27,7 +402,7 @@
 		<table domainObjectName="VideoEpisodeCommentPraise" tableName="t_video_episode_comment_praise">
 			<generatedKey type="post" identity="true" column="id" sqlStatement="MySql" />
 		</table>
-				
+		-->		
 		<!-- <table domainObjectName="Admin" tableName="tb_admin">
 			<generatedKey type="post" identity="true" column="id"
 				sqlStatement="MySql" />
